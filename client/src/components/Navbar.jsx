@@ -1,43 +1,16 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import "../styles/css/navbar.css"
+import React from 'react';
 
-const Navbar = () => {
-  const [showMobileNav, setShowMobileNav] = useState(false);
-
-  const toggleMobileNav = () => {
-    setShowMobileNav(!showMobileNav);
-  };
-
+function Navbar() {
   return (
-    <div>
-      <nav>
-        <div className= "navContainer">
-          <div className="navTopBar"></div>
-          <div className="linksContainer">
-            <Link
-              to="/"
-              className="navLink">
-              <button className="navButton">
-                <p className="navName">HOME</p>
-              </button>
-            </Link>
-            <Link
-              to="/about"
-              className="navLink">
-              <button className="navButton">
-                <p className="navName">ABOUT</p>
-              </button>
-            </Link>
-            <div
-              className="classes.menuIcon"
-              onClick="toggleMobileNav">
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/order">Order Now</a></li>
+      </ul>
+    </nav>
   );
-};
+}
 
 export default Navbar;
