@@ -6,7 +6,6 @@ function App() {
   return (
     <div>
       <Navbar />
-      <h1>Krispi Hot Chicken</h1>
     </div>
   );
 }
