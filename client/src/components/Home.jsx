@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Fire from './Fire/Fire.jsx';
 
 
 function Home() {
@@ -15,7 +15,10 @@ function Home() {
           <button className="order-button">Order Now</button>
         </div>
       </div>
+      
       <Footer />
+      
     </div>
   );
 }
+export default Home;

@@ -28,11 +28,11 @@ function Navbar() {
             <p className="navName">About</p>
           </button>
         </Link>
-        {/* <Link to="/Menu" className="navLink">
+        <Link to="/Menu" className="navLink">
           <button className="navButton">
             <p className="navName">Menu</p>
           </button>
-        </Link> */}
+        </Link>
         <Link to="https://www.clover.com/online-ordering/krispi-hot-chicken-tustin?employee_id=1QTGF85A6P6H0&order_type=dine_in" className="navLink">
           <button className="navButton">
             <p className="navName">Order</p>

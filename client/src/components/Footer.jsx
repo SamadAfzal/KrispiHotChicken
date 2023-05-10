@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/footer.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import reactDom from 'react-dom';
-import Fire from './Fire/Fire.jsx';
+
 
 
 function Footer() {
@@ -15,11 +13,12 @@ function Footer() {
   };
 
   return (
-    <div className="navDiv">
-      <div className={`navButtons ${showNavButtons ? 'active' : ''}`}>
-        <p className="navName">
+    <div className="footDiv">
+        
+         <div className={`footButtons ${showNavButtons ? 'active' : ''}`}>
+        <p className="footName">
             Address:
-            17292 McFadden Ave Ste L Tustin, CA 92780
+            17292 McFadden Ave, Ste L Tustin, CA 92780
             <br />
             Phone Number:
             (657) 356-8611
@@ -35,10 +34,11 @@ function Footer() {
         className="hamburger"
         onClick={toggleNavButtons}
       />
+      
     </div>
+    
   );
 }
-// reactDom.render(<Fire />, document.getElementById('root'));
 export default Footer;
 
 
