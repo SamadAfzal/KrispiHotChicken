@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/footer.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 
 function Footer() {
-  const [showNavButtons, setShowNavButtons] = useState(false);
-
-  const toggleNavButtons = () => {
-    setShowNavButtons(!showNavButtons);
-  };
+  const [showNavButtons] = useState(false);
 
   return (
     <div className="footDiv">
@@ -29,11 +23,7 @@ function Footer() {
             <br />
         </p>
       </div>
-      <FontAwesomeIcon
-        icon={faBars}
-        className="hamburger"
-        onClick={toggleNavButtons}
-      />
+      
       
     </div>
     

@@ -2,7 +2,8 @@ td {
     width: 3vh;
     height: 2.5vh;
     background-color: #000;
-    position: relative;
+    
+    bottom: 0;
     z-index: 0;
     border: 0;
     border-collapse: collapse;
@@ -15,7 +16,7 @@ td.pixel {
     width: 3vh;
     height: 2.5vh;
     background-color: #000;
-    position: relative;
+    position: sticky;
     z-index: 0;
     border: 0;
     border-collapse: collapse;
@@ -34,7 +35,7 @@ td.pixel {
     transition: ease-in-out 135ms, cubic-bezier(1, 0, 0, 1) 0.000001s, ease-in-out 0.000001s, ease-in-out 135ms, cubic-bezier(1, 0, 0, 1) 0.000001s;
 }
 .pixel-index {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
