@@ -18,22 +18,22 @@ function Navbar() {
         <img src={logo} alt="SAFERescue" className="logo" />
       </Link>
       <div className={`navButtons ${showNavButtons ? 'active' : ''}`}>
-        <Link to="/" className="navLink">
+        <Link to="/Home" className="navLink">
           <button className="navButton">
             <p className="navName">Home</p>
           </button>
         </Link>
-        <Link to="/" className="navLink">
+        <Link to="/About" className="navLink">
           <button className="navButton">
             <p className="navName">About</p>
           </button>
         </Link>
-        <Link to="/" className="navLink">
+        {/* <Link to="/Menu" className="navLink">
           <button className="navButton">
             <p className="navName">Menu</p>
           </button>
-        </Link>
-        <Link to="/" className="navLink">
+        </Link> */}
+        <Link to="https://www.clover.com/online-ordering/krispi-hot-chicken-tustin?employee_id=1QTGF85A6P6H0&order_type=dine_in" className="navLink">
           <button className="navButton">
             <p className="navName">Order</p>
           </button>
